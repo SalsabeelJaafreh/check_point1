@@ -24,11 +24,45 @@ class App extends React.Component{
 			}
 		})
 	}
+
+	Send(){
+		var that=this;
+		$.ajax({
+			type:'POST',
+			data:
+
+			url:'/api/users',
+			success:function(data){
+				that.setState({data:data})
+			}
+		})
+
+
+
+	}
+
+
+ Oneuser(){
+  var that=this;
+		$.ajax({
+			type:'GET',
+			url:'/api/users/:id',
+			success:function(data){
+				that.setState({data:data})
+			}
+		})
+
+
+
+
+    }
+
 	render(){
 		return(
 		<div> 
+		    <button onClick={this.Send.bind(this)}>ADD USER</button
 			<Users users={this.state.data}/>
-			<button onClick={this.Data.bind(this)}>Clickhere</button>
+			<button onClick={this.Data.bind(this)}>GET USERS</button>
 		 
 		</div>
 
