@@ -54,8 +54,8 @@ describe('User Controller', function () {
   it('should have a method that given the name of a user, retrieves their record from the database', function (done) {
     // TODO: Write test(s) for a method exported by `userController` that behaves as described one line above
     // HINT: The `done` passed in is quite important...
-    userController.getUserByName('Taka','done'  )
-    expect('email').to.equal( 'taka@taka.com');
+    userController.getUserByName('Sunny','done'  )
+    expect('email').to.equal( 'sunny@sunny.com');
 
    
   });)

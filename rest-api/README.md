@@ -2,7 +2,7 @@
 
 You've been provided with `index.js`, a bare-bones Express web server that will listen on port 8888. Start this server by running `npm start` inside this problem's directory. Using the content of `models/users.js` as user data, (made available to you already in `index.js`), build out the following API:
 
-|      URL       | HTTP Verb | Request Body |                         Result                          |
+|      URL       | HTTP Verb | Request Body |                        Result                          |
 |:--------------:|:---------:|:------------:|:-------------------------------------------------------:|
 | /api/users     |    GET    |    empty     |                                Return JSON of all users |
 | /api/users     |    POST   |     JSON     |            Create new user* and return JSON of new user |

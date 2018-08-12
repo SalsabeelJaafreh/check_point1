@@ -2,15 +2,15 @@ var user=require('../models/User.js')
 // Given the name of a user, retrieve their record from the database
 exports.getUserByName = function (name, res) {
   // TODO
-  User.find({name:name},function(error,result){
+  User.find({name:name},function(error,user){
   	 if(error){
 	console.log("error")
 	res.send(500)
          }
 
          else{
-         	console.log(result)
-         	res.send(result)
+         	console.log(user)
+         	res.send(user)
          }
   })
 };
@@ -41,7 +41,7 @@ exports.updateEmailByName = function (name, newEmail, callback) {
 // Read all users from the database at once
 exports.readAllUsers = function (callback) {
   // TODO
-  //u mean by read like retrieve ,right!?
+  //u mean by read "retrieve" ,right!?
    User.find({},function(error,users){
   	if(error){console.log("database ie empty")}
   		else{
