@@ -2,13 +2,13 @@ var Router = require('express').Router();
 var Usercontroller=require('./Usercontroller');
 
 
-Router.route('/users').get(Usercontroller.alluser)
-Router.route('/users').post(Usercontroller.createuser)
+Router.route('api/users').get(Usercontroller.alluser)
+Router.route('api/users').post(Usercontroller.createuser)
 
-Router.route('users/:id').get(Usercontroller.retrieveuser)
+Router.route('api/users/:id').get(Usercontroller.retrieveuser)
 
-Router.route('users/:id').put(Usercontroller.updateuser)
-Router.route('users/:id').delete(Usercontroller.deleteuser)
+Router.route('api/users/:id').put(Usercontroller.updateuser)
+Router.route('api/users/:id').delete(Usercontroller.deleteuser)
 
 
 

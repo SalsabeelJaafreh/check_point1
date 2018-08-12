@@ -30,5 +30,15 @@ describe('Job Controller', function () {
   });
 
   // TODO: Write your tests for jobController here
+
+  it('should have a create method', function (done) {
+   
+   jobController.createJob('','done'  )
+    expect(function(){}).to.exist();
+//i will back 
+   
+  });)
+  
+  });
  
 });

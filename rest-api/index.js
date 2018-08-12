@@ -16,7 +16,7 @@ app.listen('8888', function () {
 
 
 
-app.use('/api',routers);
+app.use('/',routers);
 
 
  app.get('/', function (req, res) {
