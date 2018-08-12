@@ -6,7 +6,6 @@ const Users = (props) => (
     {props.users.map((user)=>
     	<Userkey={user._id} user={user} />
     	)}
-
   </div>
 );
 
