@@ -4,3 +4,21 @@ var exampleUser = {
   email: 'taka@taka.com'
 };
 
+var mongoose=require('mongoose')
+
+mongoose.connect('mongodb://localhost/user';
+
+
+var userSchema =mongoose.Schema({
+
+ name:String,
+ email:String
+});
+
+
+
+var User=mongoose.model('User',userSchema);
+
+
+module.exports = User ;
+
